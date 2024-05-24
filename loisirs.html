@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Métadonnées du document -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Titre de la page -->
+    <title>Portfolio | Pierre Ychnightder</title>
+    <!-- Liens vers les feuilles de style -->
+    <link rel="stylesheet" href="./CSS/Navigation.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./BS_CSS/css/bootstrap.min.css" />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <!-- Marque et lien du portfolio -->
+            <a class="navbar-brand" href="./index.html">Portfolio.</a>
+            <!-- Bouton de bascule pour les écrans de petite taille -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Liens de navigation -->
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link text-primary-emphasis" href="./index.html">Accueil</a>
+                    <a class="nav-link text-primary-emphasis" href="./competence.html">Competence</a>
+                    <a class="nav-link text-primary-emphasis" href="./experience.html">Experience</a>
+                    <!-- Lien actif pour la page Loisirs -->
+                    <a class="nav-link bg-primary active" aria-current="page" href="./loisirs.html">Loisirs</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Contenu principal (Loisirs) -->
+    <main class="loisirsMain">
+        <!-- Accordion pour afficher les loisirs -->
+        <div class="accordion" id="accordionPanelsStayOpenExample" data-bs-theme="dark">
+            <!-- Section pour les jeux vidéo -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseOne">
+                        JEUX VIDEO
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                        <!-- Contenu de la section (par exemple, texte et images) -->
+                        <div class="boxloisir">
+                            <p>
+                                Les jeux vidéo font partie intégrante de mon temps libre. Que ce soit pour l'exploration de
+                                mondes virtuels, la résolution d'énigmes ou la compétition en ligne, les jeux vidéo sont une
+                                source constante de divertissement
+                            </p>
+                            <div class="img">
+                                <!-- Images représentant les jeux vidéo -->
+                                <img src="./image/1664302686valorant-icon-png.png" width="50px" alt="" />
+                                <img src="./image/Fortnite_F_lettermark_logo.png" width="50px" alt="" />
+                                <img src="./image/1280px-Rocket_League_logo.svg.png" width="110px" alt="" />
+                                <img src="./image/360px-Minecraft_logo.png" width="50px" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Section pour l'animation japonaise (anime) -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseTwo">
+                        ANNIMATION JAPONAISE
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <!-- Contenu de la section -->
+                        <div class="boxloisir">
+                            <p>
+                                Les animés japonais ont une place spéciale dans mes loisirs. La richesse des histoires, la
+                                variété des genres et le style artistique unique font de l'anime une source infinie
+                                d'inspiration.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Section pour le développement web -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseThree">
+                        DEV WEB
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <!-- Contenu de la section -->
+                        <div class="boxloisir">
+                            <p>
+                                Le développement web est plus qu'une compétence pour moi, c'est une passion. J'aime
+                                créer des sites web interactifs et fonctionnels, explorer de nouvelles technologies et
+                                résoudre des problèmes de manière créative.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Scripts -->
+    <!-- Inclusion du script Bootstrap -->
+    <script src="./BS_CSS/js/bootstrap.bundle.js "></script>
+</body>
+</html>

@@ -1,0 +1,499 @@
+
+
+/* Import de la police Poppins depuis Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Réinitialisation des marges et des rembourrages pour tous les éléments */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Style de base pour le corps de la page */
+body {
+    height: 100vh;
+    color: #fff;
+}
+
+/* Styles pour la section Accueil */
+main .container-img {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 100vh;
+    background: url(../image/fotis-fotopoulos-LJ9KY8pIH3E-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 2s ease-out; /* Active l'animation de transition */
+}
+
+.containerTxt {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.containerTxt .tilte {
+    font-size: 75px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.containerTxt h3 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.containerTxt p {
+    font-size: 20px;
+}
+
+.containerTxt img {
+    rotate: 90deg; /* Note: la propriété correcte est 'transform' au lieu de 'rotate' */
+    margin: 15px 0 0 0;
+}
+
+.containerTxt a {
+    text-decoration: none;
+    background: #264653;
+    color: #fff;
+    font-size: 16px;
+    width: 250px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin: 30px 0;
+    transition: all 0.3s ease-out;
+}
+
+.containerTxt a:hover {
+    background: #fff;
+    color: #264653;
+}
+/* Fin de la section Accueil */
+
+/* Styles pour la section COMPETENCE */
+.contaitenerTilte {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contaitenerTilte h1 {
+    font-size: 75px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #264653;
+    margin: 50px 0;
+}
+
+.containerTable {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.containerTable table {
+    border: 1px solid #111;
+    width: 950px;
+}
+
+.containerTable table tr {
+    border: 1px solid #111;
+}
+
+/* Styles pour les colonnes de la table */
+.containerTable table tr th {
+    text-align: center;
+    border: 1px solid #111;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.containerTable table tr th:nth-child(1) {
+    color: #e76f51;
+}
+
+.containerTable table tr th:nth-child(2) {
+    color: #22aa99;
+}
+
+.containerTable table tr th:nth-child(3) {
+    color: #e9c46a;
+}
+
+.containerTable table tr th:nth-child(4) {
+    color: #264653;
+}
+
+.containerTable table tr th:nth-child(5) {
+    color: #f4a261;
+}
+
+/* Styles pour les cellules de la table */
+.containerTable table tr td {
+    border: 1px solid #111;
+    height: 250px;
+}
+
+/* Styles pour les différentes catégories */
+.h {
+    color: #e76f51;
+}
+
+.c {
+    color: #22aa99;
+}
+
+.j {
+    color: #e9c46a;
+}
+
+.cc {
+    color: #264653;
+}
+
+.s {
+    color: #f4a261;
+}
+
+/* Loader animé */
+.loader {
+    margin: 0 auto;
+    border: 20px solid #b73838; /* Gris clair */
+    border-top: 20px solid #b7c3f3; /* Bleu */
+    border-left: 20px solid #b7c3f3;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: spin 2s linear;
+}
+
+/* Styles spécifiques pour chaque catégorie de la table */
+.containerTable table tr .h {
+    border: 20px solid #e76f51;
+    border-top: 20px solid #e76f51;
+    border-left: 20px solid #e76f51;
+    border-right: 20px solid #e76f51;
+}
+
+.containerTable table tr .c {
+    border: 20px solid #22aa99;
+    border-top: 20px solid #22aa99;
+    border-left: 20px solid #22aa99;
+    border-right: 20px solid #ddd;
+}
+
+.containerTable table tr .j {
+    border: 20px solid #ddd;
+    border-top: 20px solid #ddd;
+    border-left: 20px solid #e9c46a;
+    border-right: 20px solid #ddd;
+}
+
+.containerTable table tr .cc {
+    border: 20px solid #ddd;
+    border-top: 20px solid #ddd;
+    border-left: 20px solid #264653;
+    border-right: 20px solid #ddd;
+}
+
+.containerTable table tr .s {
+    border: 20px solid #f4a261;
+    border-top: 20px solid #ddd;
+    border-left: 20px solid #f4a261;
+    border-right: 20px solid #ddd;
+}
+
+/* Animation de rotation pour le loader */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Media queries pour la réactivité */
+@media screen and (max-width: 950px) {
+    .containerTable table {
+        width: 850px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .containerTable table {
+        width: 800px;
+    }
+}
+
+
+
+
+
+
+/* Media query pour les écrans de largeur maximale de 830px */
+@media screen and (max-width: 830px) {
+    /* Section COMPETENCE */
+
+    /* Alignement et stylisation de la section principale COMPETENCE */
+    .mainCompetance {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+    }
+
+    /* Ajustement de la taille de la police pour le titre */
+    .contaitenerTilte h1 {
+        font-size: 50px;
+    }
+
+    /* Styles spécifiques pour la table dans COMPETENCE */
+    .containerTable table {
+        width: 350px; /* Ajustez la largeur selon vos besoins */
+        border: 1px solid #111;
+        margin: 15px 0;
+    }
+
+    /* Styles pour les lignes de la table dans COMPETENCE */
+    .containerTable table tr {
+        display: flex;
+        flex-direction: column; /* Transforme les cellules en une colonne */
+        align-items: center;
+        border: none;
+        height: 650px;
+    }
+
+    /* Position absolue pour la classe language dans la table de COMPETENCE */
+    .containerTable table .language {
+        position: absolute;
+    }
+
+    /* Alignement des cellules de la table dans COMPETENCE */
+    .containerTable table tr th {
+        align-self: flex-start;
+        border: none;
+        margin: 51px 10px;
+        font-size: 18px;
+    }
+
+    /* Hauteur des cellules de la table dans COMPETENCE */
+    .containerTable table tr td {
+        height: 100px; /* Ajustez la hauteur selon vos besoins */
+        border: none;
+        margin: 15px 0;
+    }
+
+    /* Ajustement de la taille du loader dans COMPETENCE */
+    .loader {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* Fin de la section COMPETENCE */
+
+    /* Media query pour les écrans de largeur maximale de 500px */
+    @media screen and (max-width: 500px) {
+        /* Ajustement de la taille de la police du titre dans COMPETENCE */
+        .contaitenerTilte h1 {
+            font-size: 45px;
+            text-align: center;
+        }
+    }
+}
+
+/* Section EXPERIENCE */
+
+/* Stylisation générale pour la section EXPERIENCE */
+.mainExperience {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Alignement et stylisation pour la section principale de la section EXPERIENCE */
+.mainExperience .perspro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+}
+
+/* Stylisation pour la partie personnelle (perso) de la section EXPERIENCE */
+.perspro .perso {
+    margin: 0 20px;
+    width: 50%;
+    background: #ddd;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+/* Marge du titre h2 dans la partie personnelle de la section EXPERIENCE */
+.perso h2 {
+    margin: 30px 0px 30px 0;
+    text-align: center;
+}
+
+/* Marge et alignement du paragraphe dans la partie personnelle de la section EXPERIENCE */
+.perso p {
+    margin: 15px 20px;
+    text-align: left;
+}
+
+/* Stylisation pour la partie professionnelle (pro) de la section EXPERIENCE */
+.perspro .pro {
+    margin: 0 20px;
+    border-radius: 15px;
+    width: 50%;
+    height: 100%;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Marge du titre h2 dans la partie professionnelle de la section EXPERIENCE */
+.pro h2 {
+    margin: 30px 0px 70px 0;
+    text-align: center;
+}
+
+/* Alignement et stylisation du centre dans la partie professionnelle de la section EXPERIENCE */
+.pro .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+}
+
+/* Marge du paragraphe dans la partie centrale de la section EXPERIENCE */
+.center p {
+    margin: 15px 0;
+}
+
+/* Media queries pour la réactivité de la section EXPERIENCE */
+@media screen and (max-width: 1300px) {
+    /* Ajustement de la taille du titre dans COMPETENCE */
+    .contaitenerTilte h1 {
+        font-size: 45px;
+        text-align: center;
+        margin-bottom: 150px;
+    }
+
+    /* Ajustement de la taille du paragraphe dans la partie personnelle de la section EXPERIENCE */
+    .perso p {
+        margin: 15px 20px;
+        text-align: left;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    /* Ajustement de la taille du paragraphe dans la partie personnelle de la section EXPERIENCE */
+    .perso p {
+        margin: 15px 20px;
+        text-align: left;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    /* Ajustement de la hauteur et du flux pour la section principale EXPERIENCE */
+    .mainExperience .perspro {
+        flex-direction: column;
+        height: 900px;
+    }
+
+    /* Ajustement de la hauteur pour la partie personnelle de la section EXPERIENCE */
+    .perspro .perso {
+        height: 500px;
+        margin-bottom: 50px;
+    }
+
+    /* Ajustement de la hauteur pour la partie professionnelle de la section EXPERIENCE */
+    .perspro .pro {
+        height: 500px;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    /* Ajustement de la largeur et du flux pour la section principale EXPERIENCE */
+    .mainExperience .perspro {
+        width: 100%;
+        flex-direction: column;
+        height: 900px;
+    }
+
+    /* Ajustement de la hauteur pour la partie personnelle de la section EXPERIENCE */
+    .perspro .perso {
+        height: 600px;
+        margin-bottom: 50px;
+    }
+
+    /* Ajustement de la taille du paragraphe dans la partie personnelle de la section EXPERIENCE */
+    .perso p {
+        font-size: 9px;
+    }
+
+    /* Ajustement de la hauteur pour la partie professionnelle de la section EXPERIENCE */
+    .perspro .pro {
+        height: 500px;
+		margin-bottom: 50px;
+
+	}
+
+}
+
+
+/* Section EXPERIENCE */
+
+/* Stylisation générale pour la section EXPERIENCE */
+.loisirsMain {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Stylisation pour les titres dans la section loisirs */
+.accordion h2 button {
+    font-weight: 700;
+    color: #fff;
+}
+
+/* Stylisation spécifique pour les éléments de la boîte de loisirs */
+.accordion-item .accordion-collapse .accordion-body .boxloisir {
+    width: 100%;
+    height: 159px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Marge pour les images à l'intérieur de la boîte de loisirs */
+.img img {
+    margin: 0 15px;
+}
+
+/* Fin de la section loisirs */
+

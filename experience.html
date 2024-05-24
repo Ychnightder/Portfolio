@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Métadonnées du document -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Titre de la page -->
+    <title>Portfolio | Pierre Ychnightder</title>
+    <!-- Liens vers les feuilles de style -->
+    <link rel="stylesheet" href="./CSS/Navigation.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./BS_CSS/css/bootstrap.min.css" />
+</head>
+<body>
+    <!-- En-tête (Header) - Accueil -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <!-- Marque et lien du portfolio -->
+            <a class="navbar-brand" href="./index.html">Portfolio.</a>
+            <!-- Bouton de bascule pour les écrans de petite taille -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <!-- aria-current="page" -->
+            </button>
+            <!-- Liens de navigation -->
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link text-primary-emphasis" href="./index.html">Accueil</a>
+                    <a class="nav-link text-primary-emphasis" href="./competence.html">Competence</a>
+                    <!-- Lien actif pour la page Expérience -->
+                    <a class="nav-link bg-primary active" aria-current="page" href="./experience.html">Experience</a>
+                    <a class="nav-link text-primary-emphasis" href="./loisirs.html">Loisirs</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Fin de l'en-tête -->
+
+    <!-- Contenu principal (Expériences) -->
+    <main class="mainExperience">
+        <!-- Section titre -->
+        <div class="contaitenerTilte">
+            <h1>Mes Experiences</h1>
+        </div>
+        <!-- Section Expériences Personnelles et Professionnelles -->
+        <div class="perspro">
+            <!-- Section Expériences Personnelles -->
+            <div class="perso">
+                <h2>Experiences Personnel</h2>
+                <p>
+                    Pendant ces dernières semaines, j'ai consacré beaucoup de temps à approfondir mes compétences en développement web. J'ai choisi de me
+                    perfectionner dans le trio essentiel que sont le HTML, le CSS et le JavaScript. Pour m'aider, j'ai utilisé le site Frontend Mentor, qui
+                    s'est révélé être une ressource exceptionnelle pour des projets pratiques. <br />
+                    En parallèle, j'ai regardé différentes vidéos sur YouTube. Ces ressources m'ont permis de mieux comprendre le langage web. <br />
+                    Cette expérience d'apprentissage m'a permis de consolider mes bases et de me familiariser avec des projets concrets. Je suis enthousiaste
+                    à l'idée de continuer à explorer et à approfondir mes connaissances dans le vaste domaine du développement web.
+                </p>
+            </div>
+            <!-- Section Expériences Professionnelles -->
+            <div class="pro">
+                <h2>Experiences Professionel</h2>
+                <div class="center">
+                    <!-- Image représentant l'expérience professionnelle -->
+                    <img src="./image/images/avion.png" alt="" />
+                    <p>Aucune !</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Fin du contenu principal -->
+
+    <!-- Scripts -->
+    <!-- Inclusion du script Bootstrap -->
+    <script src="./BS_CSS/js/bootstrap.bundle.js "></script>
+</body>
+</html>
